@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    list-style: none;
+    background-color: #0C2C40;
+    font-family: "Montserrat";
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: rgb(239,238,233);
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-weight: bold;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+li:hover {
+    color: #F2D5A0
+}
+
+#logo {
+    width: 150px;
+}
+
+#banner {
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 0.4) 90%), url(../imagens/banner.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#chamada {
+    text-align: center;
+    margin: 100px auto;
+    color: #fff;
+    width: 50%;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column; 
+}
+
+#chamada p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.trailer {
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+#sinopse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: rgb(239,238,233);
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #A66124;
+    color: rgb(239,238,233);
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #C9E7F2;
+    color: #0C2C40;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+
+.card:hover {
+    transform: scale(1.04)
+}
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.banner-1 {
+    background-image: url(https://th.bing.com/th/id/OIG4.vPDV8JsUbH1h2R8OEXX0?w=1024&h=1024&rs=1&pid=ImgDetMain);
+}
+
+.banner-2 {
+    background-image: url(https://th.bing.com/th/id/OIG1.WcbDcucjj0I_GiK8EtSO?pid=ImgGn);
+}
+
+.banner-3 {
+    background-image: url(https://th.bing.com/th/id/OIG4.6j81LhbTKsXUq5hfeCiP?w=1024&h=1024&rs=1&pid=ImgDetMain);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: rgb(239,238,233);
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: left 40%;
+    }
+
+    #chamada {
+        width: auto;
+        padding: 8%;
+    }
+
+    #trailer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trailer {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .description {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 80px;
+    }
+}
